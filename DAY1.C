@@ -1,3 +1,4 @@
+/*1.	Write a program to print discount over 1000 items:*/
 #include<stdio.h>
 int main()
 {
