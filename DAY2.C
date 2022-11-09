@@ -1,17 +1,20 @@
 /* 2.	Write a program to find the area of triangle:*/
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-	float a,b,c,s,area;
-	printf("Enter the value of first side:");
-	scanf("%f", &a);
-	printf("Enter the value of second side:");
-	scanf("%f", &b);
-	printf("Enter the value of third side:");
-	scanf("%f", &c);
-	s=(a+b+c)/2;
-	printf("Semiperimeter: %f\n", s);
-	area=sqrt(s*(s-a)*(s-b)*(s-c));
-	printf("Area: %f", area);
+	int quantity, discount;
+	float rate, total;
+	printf("Enter the quantity:");
+	scanf("%d", &quantity);
+	printf("Enter the rate:");
+	scanf("%f", &rate);
+	if(quantity>1000)
+	discount=10;
+	else
+	discount=0;
+	total=(quantity*rate);
+	printf("Total before discount:%f\n", total );
+	discount=(total-total*0.1);
+	printf("Total after discount: %d", discount);
 	return 0;
+}
